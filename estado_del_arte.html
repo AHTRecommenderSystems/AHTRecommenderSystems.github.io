@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bonappetit</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+
+    <script src="./js/ie-emulation-modes-warning.js"></script>
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Inicio</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="introduction.html">Introducción</a>
+                    </li>
+                    <li>
+                        <a href="definition.html">Definición Del Proyecto</a>
+                    </li>
+                    <li>
+                        <a href="estado_del_arte.html">Estado Del Arte</a>
+                    </li>
+                    <li>
+                        <a href="analisis_general.html">Análisis General Del Proyecto</a>
+                    </li>
+                     <li class="nav-item dropdown">
+                                    <a class="dropdown-toggle  clickable" data-toggle="dropdown">Marco Teórico</a>
+                                        <ul class="dropdown-menu">
+                                            <li ><a href="definiciones.html" class="nav-item">Definiciones</a></li>
+                                            <li ><a href="tecnicas.html" class="nav-item">Técnicas De Recomendación</a></li>
+                                        </ul>    
+                                </li> 
+                    <li>
+                        <a href="prototipo_1.html">Prototipo 1</a>
+                    </li>
+                     <li>
+                         <a href="prototipo_2.html">Prototipo 2</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-offset-2 col-lg-8  text-center">
+                <h2><b>Estado del arte</b></h2>
+                
+                
+               
+                <br>
+                <p style="text-align: justify" class="lead">
+                     Debido al auge de los sistemas de recomendación, es posible mostrar una larga lista de servicios que 
+                     utilizan este tipo de herramientas, a continuación se encuentran algunas muy relevantes. Cabe destacar 
+                     que muchas de ellas solo son un sistema de recomendación de código cerrado y no permiten reutilizar sus 
+                     funciones de esta forma para algún desarrollador que desee realizar una aplicación similar.
+                </p>
+                <br>
+                <br>
+                <h3><b>A contuniación se mencionaran algunos prouyectos semejantes:</b></h3>
+                <br>
+                <br>
+                <h3><b>Spotify</b></h3>
+                <p style="text-align: justify" class="lead">
+                   Desarrollado en el 2008, es un software multiplataforma que permite escuchar en modo radio buscando por artista, 
+                   álbum o listas de reproducción creadas por los propios usuarios. Spotify hace uso de un sistema de recomendación 
+                   para mostrar canciones y listas de reproducción a sus usuarios. Utiliza una transferencia de archivos de audio por 
+                   Internet a través de la combinación de servidor basado en el streaming y en la transferencia peer-to-peer (P2P). 
+                </p>
+                <br>
+                <br>
+                <h3><b>PredictionIO</b></h3>
+                <p style="text-align: justify" class="lead">
+                   Proporciona los recursos necesarios para crear un servidor de recomendaciones usando aprendizaje máquina. 
+                   Todo a través de una API REST que se comunica con las distintasaplicaciones clientes y va recolectando datos 
+                   para aplicar los más de 20 algoritmos de recomendaciones precargados. Cuenta con varios SDK para integrarlo en 
+                   sus aplicaciones como Java, Python, Ruby o PHP.
+                </p>
+                <br>
+                <br>
+                <h3><b>REST API</b></h3>
+                <p style="text-align: justify" class="lead">
+                   API easyrec es capaz de recibir acciones desde o enviar recomendaciones a la aplicación web en estilo REST. 
+                   Todas las acciones de los usuarios enviados a easyrec son analizados por el ruleminer, que se ejecuta una vez 
+                   al día de forma predeterminada. Si similitudes significativas en el comportamiento del usuario se pueden encontrar,
+                   se generan recomendaciones y son accesibles al instante utilizando los servicios web de recomendación.
+                </p>
+                    
+                    
+                        
+                
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
