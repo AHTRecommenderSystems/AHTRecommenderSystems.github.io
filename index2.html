@@ -1,31 +1,58 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Bonappetit</title>
+
+    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
 
     <script src="./js/ie-emulation-modes-warning.js"></script>
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
 
-    <div id="wrapper">
-
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="index.html">
-                        Bonappetit
-                    </a>
-                </li>
-                <li>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Inicio</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
                         <a href="introduction.html">Introducción</a>
                     </li>
                     <li>
@@ -37,90 +64,33 @@
                     <li>
                         <a href="analisis_general.html">Análisis General Del Proyecto</a>
                     </li>
-                <li>
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toogle"
-                               data-toggle="collapse" data-parent="#leftMenu"
-                               href="#collapseTwo">
-                                Marco Teórico
-                            </a>
-                        </div>
-                        <div id="collapseTwo" class="accordion-body collapse"
-                            style="height: 0px;">
-                            <div class="accoridion-inner">
-                                <ul>
-                                    <li><a href="definiciones.html" class="nav-item">Definiciones</a></li>
-                                    <li ><a href="tecnicas.html" class="nav-item">Técnicas De Recomendación</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </li>
-                <li>
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toogle"
-                               data-toggle="collapse" data-parent="#leftMenu"
-                               href="#collapseOne">
-                                Prototipos
-                            </a>
-                        </div>
-                        <div id="collapseOne" class="accordion-body collapse"
-                            style="height: 0px;">
-                            <div class="accoridion-inner">
-                                <ul>
-                                    <li><a href="prototipo_1.html">Prototipo 1</a></li>
-                                    <li><a href="prototipo_2.html">Prototipo 2</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </li>
-                <li>
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toogle"
-                               data-toggle="collapse" data-parent="#leftMenu"
-                               href="#collapseThree">
-                                Trabajo Terminal 2
-                            </a>
-                        </div>
-                        <div id="collapseThree" class="accordion-body collapse"
-                            style="height: 0px;">
-                            <div class="accoridion-inner">
-                                <ul>
-                                    <li><a href="./tt2/terminal_work_2.html"> TT 2</a></li>
-                                    <li><a href="./tt2/Friendly_Dolphin.html"> FriendlyDolphin</a></li>
-                                    <li><a href="./tt2/CuteBunny.html">CuteBunny</a></li>
-                                    <li><a href="./tt2/Hard_Ant.html">Hard Ant</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </li>
-                <li>
-                    <a href="inprogress.html">Trabajo en progreso</a>
-                </li>
-                <li>
-                    <a href="links.html">Enlaces</a>
-                </li>
-
-            </ul>
+                     <li class="nav-item dropdown">
+                                    <a class="dropdown-toggle  clickable" data-toggle="dropdown">Marco Teórico</a>
+                                        <ul class="dropdown-menu">
+                                            <li ><a href="definiciones.html" class="nav-item">Definiciones</a></li>
+                                            <li ><a href="tecnicas.html" class="nav-item">Técnicas De Recomendación</a></li>
+                                        </ul>    
+                                </li> 
+                    <li>
+                        <a href="prototipo_1.html">Prototipo 1</a>
+                    </li>
+                     <li>
+                         <a href="prototipo_2.html">Prototipo 2</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <!-- /#sidebar-wrapper -->
+        <!-- /.container -->
+    </nav>
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>API Para El Desarrollo De Sistemas De Recomendación</h1>
+                <div class="col-lg-12">
 
 
                         <!-- Carousel
@@ -212,25 +182,18 @@
                           </a>
                         </div><!-- /.carousel -->
                     </div>
-                </div>
             </div>
         </div>
-        <!-- /#page-content-wrapper -->
+        <!-- /.row -->
 
     </div>
+    <!-- /.container -->
 
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="./js/holder.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./js/ie10-viewport-bug-workaround.js"></script>
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
 
-
-
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
