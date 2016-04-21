@@ -98,6 +98,8 @@
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
+                    <a id="nav-toggle" href="#menu-toogle" class="show"><span></span><h3></h3></a>
+                    
                     <div class="col-lg-offset-2 col-lg-8  text-center">
                         <h2>INTRODUCCIÓN</h2>
                 
@@ -108,16 +110,14 @@
                             así como en búsquedas de información al mostrar artículos relacionados que pueden ser de interés al usuario final.</p>
                 
                 <p style="text-align: justify" class="lead">
-                            Esto se logra a través de la aplicación de la Inteligencia Artificial (IA) la cual por medio de ciencias como las ciencias 
-                            de la computación y la lógica, estudia la creación de entidades que son capaces de resolver problemas por sí mismas utilizando 
-                            el paradigma de la inteligencia humana. Existen sistemas que cuentan con herramientas de inteligencia artificial, dichos sistemas 
+                            Existen sistemas que cuentan con herramientas de inteligencia artificial, dichos sistemas 
                             pueden ejecutar distintos procesos análogos al comportamiento humano, determinando la devolucion de una respuesta por 
                             cada entrada mediante una lógica formal.</p>
                 <p style="text-align:justify" class="lead">
                             El uso de la IA se ve implicado en los sistemas de recomendación, los cuales son sistemas inteligentes 
                             que proporcionan al usuario una serie de sugerencias determinadas por las características de los objetos categorizados y evaluados en el sistema, 
-                            así como diferentes reglas pertenecientes a la lógica de los algoritmos de selección. Esto resulta en un conjunto de objetos que deberán adaptarse 
-                            de acuerdo a los cambios en la información en el transcurso del tiempo. </p>        
+                            así como diferentes reglas pertenecientes a la lógica de los algoritmos de selección.
+                </p>        
                 <p style="text-align: justify" class="lead">
                             Debido al problema que conlleva para los programadores obtener los conocimientos necesarios al implementar un sistema de recomendación al mismo
                             tiempo que se intenta resolver un problema en particular, en este Trabajo Terminal se propone desarrollar un conjunto de funciones, reglas, especificaciones
@@ -125,11 +125,7 @@
                             de aprendizaje del programador al momento de desarrollar sistemas de recomendación. 
                             
                 </p>
-                <p style="text-align: justify" class="lead">
-                            Así, al tiempo que se crean las herramientas necesarias para obtener recomendaciones de artículos, se creará un sistema de recomendación de platillos que verifique
-                            la funcionalidad desarrollada en el Trabajo Terminal.
-                    
-                </p>
+                
 
                 
                     </div><!--row-->
@@ -148,7 +144,14 @@
     <script src="./js/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./js/ie10-viewport-bug-workaround.js"></script>
-
+      <script>
+        document.querySelector( "#nav-toggle" )
+        .addEventListener( "click", function() {
+        this.classList.toggle( "active" );
+        
+        $("#wrapper").toggleClass("toggled");
+  });
+    </script>
 
 
 

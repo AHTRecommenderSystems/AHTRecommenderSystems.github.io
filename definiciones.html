@@ -14,11 +14,12 @@
 </head>
 
 <body>
-
+    
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <div id="sidebar-wrapper">
+        <div id="sidebar-wrapper" >
+            
             <ul class="sidebar-nav">
                                 <li class="sidebar-brand">
                     <a href="index.html">
@@ -90,85 +91,77 @@
                 </li>
 
             </ul>
+            
         </div>
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
+                
                 <div class="row">
+                    <a id="nav-toggle" href="#menu-toogle" class="show"><span></span><h3></h3></a>
                     <div class="col-lg-offset-2 col-lg-8  text-center">
                         <h2><b>Algunas Definiciones</b></h2>
-                
-                
-               
-                <br>
-                 <h3><b>Application Programming Interface (API)</b></h3>
-                <p style="text-align: justify" class="lead">
-                   Una API (siglas de ‘Application Programming Interface’) es un conjunto de reglas (código) y especificaciones que las aplicaciones pueden seguir para comunicarse entre ellas:
+                        <br>
+                        <h3><b>Application Programming Interface (API)</b></h3>
+                        <p style="text-align: justify" class="lead">
+                            Una API (siglas de ‘Application Programming Interface’) es un conjunto de reglas (código) y especificaciones 
+                            que las aplicaciones pueden seguir para comunicarse entre ellas: sirviendo de interfaz entre programas diferentes 
+                            de la misma manera en que la interfaz de usuario facilita la interacción humano-software.
+                        </p>
+                        <br>
+                        <br>
+                        <h2><b>Sistema De Recomendación</b></h2>
+                        <p style="text-align: justify" class="lead">
+                            Un sistema de recomendación es un sistema inteligente que proporciona a los usuarios una serie de sugerencias
+                            personalizadas (recomendaciones) sobre un determinado tipo de elementos (items). Los sistemas de recomendación
+                            estudian las características de cada usuario y mediante un procesamiento de los datos, encuentra un subconjunto
+                            de items que pueden resultar de interés para el usuario.
+                        </p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <h3><b>Algoritmos de recomendación</b></h3>
+                        <h3><b>Vecinos próximos (k-NN)</b></h3>
+                        <p style="text-align: justify" class="lead">
+                            Este método selecciona los k vecinos más similares al usuario o al ítem objetivo, de
+                            forma que mediante la combinación lineal del rating de los vecinos se realiza una predicción
+                            de rating. A partir de esta predicción, podemos sacar el ránking de ítems a recomendar,
+                            simplemente ordenándolos por orden descendente del rating predicho. Existe una gran cantidad 
+                            de variaciones para estos algoritmos, ya que tienen muchos parámetros configurables que dan 
+                            diferentes resultados dependiendo de los datos con los que se traten. El número k de vecinos, 
+                            la similitud mínima a considerar como relevante, o el número de ítems en común para una similitud 
+                            válida son algunos de los parámetros a establecer para estos algoritmos.
+                        </p>    
+                        <p style="text-align: justify" class="lead">
+                        Los algoritmos de vecinos próximos se han desarrollado en dos perspectivas posibles:
+                            recomendación de vecinos próximos por usuario y por ítem.
+                        </p>
+                        <br>
+                        <br>
+                        <h3><b>Bases de datos orientadas a grafos</b></h3>
+                            <p style="text-align: justify" class="lead">
+                                Las bases de datos relacionales han existido por muchas décadas y son la tecnología
+                                de base de datos de elección para la mayoría de almacenamientos intensivos de datos y
+                                aplicaciones de obtención de datos. La obtención generalmente se logra mediante SQL, un
+                                lenguaje declarativo de consultas. Los sistemas de bases de datos relacionales son generalmente 
+                                eficientes a menos que la información contenga muchas relaciones que requieren la unión de tablas grandes. 
+                            </p>
+                            <br>
+                            <br>
+                        <h3><b>Característica:</b></h3>
+                            <p style="text-align: justify" class="lead">
+                                Es una cualidad que permite identificar a algo o alguien, distinguiéndolo de sus semejantes.
+                            </p>    
+                        <h3><b>Categoría:</b></h3>
+                            <p style="text-align: justify" class="lead">
+                                Es cada uno de los grupos básicos en los que puede incluirse o clasificarse todo conocimiento.
 
-sirviendo de interfaz entre programas diferentes de la misma manera en que la interfaz de
 
-usuario facilita la interacción humano-software.
-                </p>
-                <br>
-                <br>
-                <h2><b>Sistema De Recomendación</b></h2>
-                <p style="text-align: justify" class="lead">
-                     Un sistema de recomendación es un sistema inteligente que proporciona a los usuarios una serie de sugerencias
-                     personalizadas (recomendaciones) sobre un determinado tipo de elementos (items). Los sistemas de recomendación
-                     estudian las características de cada usuario y mediante un procesamiento de los datos, encuentra un subconjunto
-                     de items que pueden resultar de interés para el usuario.
-                </p>
-                <br>
-                <br>
-                
-                <br>
-                <br>
-                <h3><b>Algoritmos de recomendación</b></h3>
-                <h3><b>Vecinos próximos (k-NN)</b></h3>
-                <p style="text-align: justify" class="lead">
-                   Este método selecciona los k vecinos más similares al usuario o al ítem objetivo, de
-
-forma que mediante la combinación lineal del rating de los vecinos se realiza una predicción
-
-de rating. A partir de esta predicción, podemos sacar el ránking de ítems a recomendar,
-
-simplemente ordenándolos por orden descendente del rating predicho. Existe una gran can-
-tidad de variaciones para estos algoritmos, ya que tienen muchos parámetros configurables
-
-que dan diferentes resultados dependiendo de los datos con los que se traten. El número k
-
-de vecinos, la similitud mínima a considerar como relevante, o el número de ítems en común
-
-para una similitud válida son algunos de los parámetros a establecer para estos algorit-
-mos. Los algoritmos de vecinos próximos se han desarrollado en dos perspectivas posibles:
-
-recomendación de vecinos próximos por usuario y por ítem.
-                </p>
-                <br>
-                <br>
-                <h3><b>Bases de datos orientadas a grafos</b></h3>
-                <p style="text-align: justify" class="lead">
-                   Las bases de datos relacionales han existido por muchas décadas y son la tecnología
-
-de base de datos de elección para la mayoría de almacenamientos intensivos de datos y
-
-aplicaciones de obtención de datos. La obtención generalmente se logra mediante SQL, un
-
-lenguaje declarativo de consultas. Los sistemas de bases de datos relacionales son general-
-mente eficientes a menos que la información contenga muchas relaciones que requieren la
-
-unión de tablas grandes. Recientemente ha habido mucho interés en los almacenes de datos
-
-que no utilizan SQL exclusivamente, el llamado movimiento NoSQL. Ejemplos de ello son
-
-BigTable de Google y Cassandra de Facebook.
-                </p>
-                <br>
-                <br>
-               
-                    
+                            </p>        
+                            
                 
                     </div> 
                 </div>
@@ -187,7 +180,14 @@ BigTable de Google y Cassandra de Facebook.
     <script src="./js/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./js/ie10-viewport-bug-workaround.js"></script>
-
+      <script>
+        document.querySelector( "#nav-toggle" )
+        .addEventListener( "click", function() {
+        this.classList.toggle( "active" );
+        
+        $("#wrapper").toggleClass("toggled");
+  });
+    </script>
 
 
 

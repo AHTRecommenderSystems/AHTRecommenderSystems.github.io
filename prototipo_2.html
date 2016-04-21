@@ -14,14 +14,14 @@
 </head>
 
 <body>
-
+    
     <div id="wrapper">
-      
-        
+
         <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav collapse navbar-collapse navbar-centered">
-                <li class="sidebar-brand">
+        <div id="sidebar-wrapper" >
+            
+            <ul class="sidebar-nav">
+                                <li class="sidebar-brand">
                     <a href="index.html">
                         Bonappetit
                     </a>
@@ -91,6 +91,7 @@
                 </li>
 
             </ul>
+            
         </div>
         <!-- /#sidebar-wrapper -->
 
@@ -98,13 +99,12 @@
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
+                    <a id="nav-toggle" href="#menu-toogle" class="show"><span></span><h3></h3></a>
                     <div class="col-lg-offset-2 col-lg-8  text-center">
                         <h2 style="text-align: center"><b>Prototipo 2</b></h2>
-                <br>
-                <br>
+                
                 <h3 style="text-align: center"><b>Visualizar los datos en recomendaciones por contenido</b></h3>
-                <br>
-                <br>
+                
                 <div class=" col-lg-6">
                     <h2>Objetivo</h2>
                     <p style="text-align: justify" class="lead">Visualizar recomendaciones bajo el filtrado por contenido de los platillos contenidos en el sistema.
@@ -190,6 +190,16 @@ por contenido para usuarios no registrados en la plataforma.
     <script src="./js/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./js/ie10-viewport-bug-workaround.js"></script>
+       <script>
+        document.querySelector( "#nav-toggle" )
+        .addEventListener( "click", function() {
+        this.classList.toggle( "active" );
+        
+        $("#wrapper").toggleClass("toggled");
+  });
+    </script>
+
+
 
 
 
