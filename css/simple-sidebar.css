@@ -123,3 +123,145 @@
         margin-right: 0;
     }
 }
+
+.show{
+    visibility: hidden;
+}
+@media only screen and (max-width:  1824px) { 
+    .show{
+ visibility: hidden;
+      
+}
+}
+@media only screen and (max-width: 1280px) { 
+   .show{
+     visibility: hidden;
+}
+}
+@media only screen and (max-width: 1224px) { 
+   .show{
+     visibility: hidden;
+}
+}
+@media only screen and (max-width: 1024px) { 
+    .show{
+     visibility: hidden;
+}
+}
+@media only screen and (max-width:768px) { 
+    .show{
+     visibility: visible;
+     width: 60px;
+}
+}
+@media only screen and (max-width:480px) { 
+   .show{
+     visibility: visible;
+     
+}
+}
+@media only screen and (max-width:360px) { 
+    .show{
+     visibility: visible;
+     
+}
+}
+@media only screen and (max-width:320px) { 
+   .show{
+     visibility:visible;
+    
+   }
+}
+
+
+h3 { color: white; }
+
+
+
+#nav-toggle {  left: 50%; top: 50%; }
+
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: black;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px; 
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+.carousel_width{
+    width: 300px;
+}
+@media only screen and (max-width:  1824px) { 
+    .carousel_width{
+ width: auto;
+      
+}
+}
+@media only screen and (max-width: 1280px) { 
+       .carousel_width{
+ width: auto;
+      
+}
+}
+@media only screen and (max-width: 1224px) { 
+     .carousel_width{
+ width: auto;
+      
+}
+}
+@media only screen and (max-width: 1024px) { 
+     .carousel_width{
+ width: auto;
+      
+}
+}
+@media only screen and (max-width:768px) { 
+      .carousel_width{
+ width: 390px;
+      
+}
+}
+@media only screen and (max-width:480px) { 
+      .carousel_width{
+ width: 390px;
+      
+}
+}
+@media only screen and (max-width:360px) { 
+        .carousel_width{
+ width: 390px;
+      
+}
+}
+@media only screen and (max-width:320px) { 
+   .show{
+     visibility:visible;
+    
+   }
+}

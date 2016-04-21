@@ -14,29 +14,28 @@
 </head>
 
 <body>
-    
+
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <div id="sidebar-wrapper" >
-            
+        <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                                <li class="sidebar-brand">
+                <li class="sidebar-brand">
                     <a href="index.html">
                         Bonappetit
                     </a>
                 </li>
                 <li>
-                        <a href="introduction.html">Introducción</a>
+                        <a href="introduction1.html">Introducción</a>
                     </li>
                     <li>
-                        <a href="definition.html">Definición Del Proyecto</a>
+                        <a href="definition1.html">Definición Del Proyecto</a>
                     </li>
                     <li>
-                        <a href="estado_del_arte.html">Estado Del Arte</a>
+                        <a href="estado_del_arte1.html">Estado Del Arte</a>
                     </li>
                     <li>
-                        <a href="analisis_general.html">Análisis General Del Proyecto</a>
+                        <a href="analisis_general1.html">Análisis General Del Proyecto</a>
                     </li>
                 <li>
                     <div class="accordion-group">
@@ -51,7 +50,7 @@
                             style="height: 0px;">
                             <div class="accoridion-inner">
                                 <ul>
-                                    <li><a href="definiciones.html" class="nav-item">Definiciones</a></li>
+                                    <li><a href="definiciones1.html" class="nav-item">Definiciones</a></li>
                                     <li ><a href="tecnicas.html" class="nav-item">Técnicas De Recomendación</a></li>
                                 </ul>
                             </div>
@@ -82,7 +81,30 @@
 
 
                 </li>
-                
+                <li>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toogle"
+                               data-toggle="collapse" data-parent="#leftMenu"
+                               href="#collapseThree">
+                                Trabajo Terminal 2
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="accordion-body collapse"
+                            style="height: 0px;">
+                            <div class="accoridion-inner">
+                                <ul>
+                                    <li><a href="./tt2/terminal_work_2.html"> TT 2</a></li>
+                                    <li><a href="./tt2/Friendly_Dolphin.html"> FriendlyDolphin</a></li>
+                                    <li><a href="./tt2/CuteBunny.html">CuteBunny</a></li>
+                                    <li><a href="./tt2/Hard_Ant.html">Hard Ant</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </li>
                 <li>
                     <a href="inprogress.html">Trabajo en progreso</a>
                 </li>
@@ -91,101 +113,75 @@
                 </li>
 
             </ul>
-            
         </div>
         <!-- /#sidebar-wrapper -->
+
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
                     <a id="nav-toggle" href="#menu-toogle" class="show"><span></span><h3></h3></a>
                     <div class="col-lg-offset-2 col-lg-8  text-center">
-                            <h2 style="text-align: center"><b>Prototipo 1</b></h2>
+                          <h2 style="text-align: center"><b>Técnicas de recomendación</b></h2>
                 <br>
                 <br>
-                <h3 style="text-align: center"><b>Obtener y abstraer los datos a utilizar</b></h3>
+                <h2 style="text-align: center"><b>Basado en contenido</b></h2>
                 <br>
                 <br>
-                   <div class=" col-lg-12" style="text-align: center">
-                     <h2>Objetivo</h2>
-                    <p style="text-align: justify" class="lead">Crear el módulo de conexión de datos apropiado para 
-                        el manejo de la información de acuerdo a un modelo de datos propuesto diseñado por el equipo 
-                        de trabajo.
-                </div> 
-                   <div class=" col-lg-12" style="text-align: center">
-                    <h2>Características</h2>
-                     <p style="text-align: justify" class="lead">
-                        El modelo de datos propuesto deberá satisfacer las necesidades para trabajar con diferentes artículos y la interacción con sus usuarios.
-                     </p>
-                     <p style="text-align: justify" class="lead">
-                        El sistema deberá permitir la conexión a la fuente de datos que corresponda con el modelo propuesto.
-                     </p>
-                     <p style="text-align: justify" class="lead">
-                        El sistema deberá ser capaz de realizar operaciones sobre los datos,para el correcto funcionamiento de los procesos lógicos del sistema.
-                     </p>
-                </div> 
-                 <div class=" col-lg-12 text-center" style="text-align: center">
-                     <h2>Restricciones</h2>
-                    <p style="text-align: justify" class="lead">
-                        El sistema se verá limitado por el lenguaje de desarrollo Java.
-                     </p>
-                     <p style="text-align: justify" class="lead">
-                        Para el caso de estudio, el sistema operará con el gestor de base de datos propio de Neo4j.
-                     </p>
-                </div> 
-                
-            </div>
-            
-                <br>
-                <br>
-                <br>
-                
-                <br>
-                <br>
-                <br>
-                <div class="col-lg-12  text-center">
+                <div class=" col-lg-6">
+                    <img src="image/contendio.png" style="height: 250px" class="img-responsive">
+                </div>    
                  <div class=" col-lg-6">
-                     <h2>Diseño</h2>
-                    <p style="text-align: justify" class="lead">
-                        Problema:  generalización de las características mínimas para realizar recomendaciones.
-
-                     </p>
                      <p style="text-align: justify" class="lead">
-                        Solución: Modelo con 3 entidades (Usuarios,Articulos,Categorías)
-                    </p>
-                    <p style="text-align: justify" class="lead">
-                        
-
+                         Las recomendaciones se basan en el conocimiento que se tiene sobre los items que el usuario ha valorado (ya sea de forma implícita o explícita), y se le recomendarán items similares que le puedan gustar o interesar.
                      </p>
-                </div>
-                <br><div class=" col-lg-6">
-                    <img src="image/general.png" style="height: 250px" class="img-responsive">
                 </div> 
             </div>
-            
             <div class="col-lg-12  text-center">
                 <br>
                 <br>
-                <h2 style="text-align: center"><b>Resultados del prototipo 1</b></h2>
+                <h2 style="text-align: center"><b>Filtrado colaborativo</b></h2>
+                <br>
+                <br>
+                 <div class=" col-lg-6">
+                    <p style="text-align: justify" class="lead">
+                         El ﬁltrado colaborativo consiste en ver que usuarios son similares al usuario activo (o usuario al que hay que realizarle las recomendaciones) y a continuación,recomendar aquellos items que no han sido votados por el usuario activo y que han resultado bien valorados por los usuarios similares.
+                     </p>
+                </div> 
+                 <div class=" col-lg-6">
+                     <img src="image/colaborativo.png" style="height: 250px" class="img-responsive">
+                </div> 
+            </div>
+            <div class="col-lg-12  text-center">
+                <br>
+                <br>
+                <h2 style="text-align: center"><b>Demografico</b></h2>
+                <br>
+                <br><div class=" col-lg-6">
+                     <img src="image/demografico.jpg" style="height: 250px" class="img-responsive">
+                </div> 
+                 <div class=" col-lg-6">
+                    <p style="text-align: justify" class="lead">
+                         Estas recomendaciones se realizan en función de las características de los usuarios (edad, sexo, situación geográfica, profesión, etc).
+
+                     </p>
+                </div> 
+                 
+            </div>
+            <div class="col-lg-12  text-center">
+                <br>
+                <br>
+                <h2 style="text-align: center"><b>Hibridas</b></h2>
                 <br>
                 
                  <div class=" col-lg-6">
                     <p style="text-align: justify" class="lead">
-                         El sistema tendrá un modelo de datos que parte del modelo general mínimo necesario 
-                         para trabajar la información añadiendo información relevante sobre el caso de estudio
-                         que utiliza platillos como artículos a recomendar. 
-                         <br>
-                         Las cuales se dividen en:
-                         Categoria
-                         Platillo
-                         Restaurante
-                         Usuario
-
+                         Mezclan alguno de los tres filtrados mencionados anteriormente para realizar recomendaciones e incluso lo combinan con alguna otra técnica de inteligencia artificial como pueda ser la lógica borrosa o la computación evolutiva.
 
                      </p>
                 </div> 
                  <br><div class=" col-lg-6">
-                     <img src="image/res1.png" style="height: 250px" class="img-responsive">
+                    <img src="image/hibrida.png" style="height: 250px" class="img-responsive">
                 </div> 
                     </div> 
                 </div>
@@ -204,7 +200,7 @@
     <script src="./js/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./js/ie10-viewport-bug-workaround.js"></script>
-      <script>
+          <script>
         document.querySelector( "#nav-toggle" )
         .addEventListener( "click", function() {
         this.classList.toggle( "active" );
@@ -212,6 +208,7 @@
         $("#wrapper").toggleClass("toggled");
   });
     </script>
+
 
 
 
