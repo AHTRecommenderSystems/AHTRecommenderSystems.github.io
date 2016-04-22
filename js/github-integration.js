@@ -156,12 +156,12 @@ $(document).ready(function(){
          no++;
        }
      });
-     //FriendlyDolphin
-     $.getJSON("https://api.github.com/repos/Ambienta2MX/FriendlyDolphin/issues", function(json) {
+     //AHT-Docs
+     $.getJSON("https://api.github.com/repos/AHTRecommenderSystems/AHT-Docs/issues", function(json) {
        if (json.message != "Not Found"){
          for( i = 0; i < json.length ; i++){
            output += "<tr><td><b><a href='"+json[i].html_url+"'>"+json[i].title+"</a></b> "+json[i].body+"</td>"+
-           "<td><a href='https://github.com/Ambienta2MX/FriendlyDolphin'>FriendlyDolphin</a></td><td>"+json[i].state;
+           "<td><a href='https://github.com/AHTRecommenderSystems/AHT-Docs'>AHT-Docs</a></td><td>"+json[i].state;
            for(j = 0; j < json[i].labels.length; j++){
              output += ", "+json[i].labels[j].name;
            }
@@ -171,12 +171,12 @@ $(document).ready(function(){
          no++;
        }
      });
-     //Ambienta2MX-Docs
-     $.getJSON("https://api.github.com/repos/Ambienta2MX/Ambienta2MX-Docs/issues", function(json) {
+     //AHT-API
+     $.getJSON("https://api.github.com/repos/AHTRecommenderSystems/AHT-API/issues", function(json) {
        if (json.message != "Not Found"){
          for( i = 0; i < json.length ; i++){
            output += "<tr><td><b><a href='"+json[i].html_url+"'>"+json[i].title+"</a></b> "+json[i].body+"</td>"+
-           "<td><a href='https://github.com/Ambienta2MX/Ambienta2MX-Docs'>Ambienta2MX-Docs</a></td><td>"+json[i].state;
+           "<td><a href='https://github.com/AHTRecommenderSystems/AHT-API/issues'>AHT-API</a></td><td>"+json[i].state;
            for(j = 0; j < json[i].labels.length; j++){
              output += ", "+json[i].labels[j].name;
            }
@@ -186,12 +186,12 @@ $(document).ready(function(){
          no++;
        }
      });
-     //AncientTortoise
-     $.getJSON("https://api.github.com/repos/Ambienta2MX/AncientTortoise/issues", function(json) {
+     //bonappettit-front
+     $.getJSON("https://api.github.com/repos/AHTRecommenderSystems/bonappettit-front/issues", function(json) {
        if (json.message != "Not Found"){
          for( i = 0; i < json.length ; i++){
            output += "<tr><td><b><a href='"+json[i].html_url+"'>"+json[i].title+"</a></b> "+json[i].body+"</td>"+
-           "<td><a href='https://github.com/Ambienta2MX/AncientTortoise'>AncientTortoise</a></td><td>"+json[i].state;
+           "<td><a href='https://github.com/AHTRecommenderSystems/bonappettit-front'>bonappettit-front</a></td><td>"+json[i].state;
            for(j = 0; j < json[i].labels.length; j++){
              output += ", "+json[i].labels[j].name;
            }
