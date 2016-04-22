@@ -249,7 +249,7 @@
 }
 @media only screen and (max-width:480px) { 
       .carousel_width{
- width: 300px;
+ width: 350px;
       
 }
 }
@@ -261,7 +261,7 @@
 }
 @media only screen and (max-width:320px) { 
         .carousel_width{
- width: 300px;
+ width: 270px;
       
 }
 }
