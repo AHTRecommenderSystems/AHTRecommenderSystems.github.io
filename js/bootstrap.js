@@ -98,7 +98,7 @@ if (typeof jQuery === 'undefined') {
 
   Alert.VERSION = '3.3.4'
 
-  Alert.TRANSITION_DURATION = 150
+  Alert.TRANSITION_DURATION = 15000000
 
   Alert.prototype.close = function (e) {
     var $this    = $(this)
@@ -322,10 +322,10 @@ if (typeof jQuery === 'undefined') {
 
   Carousel.VERSION  = '3.3.4'
 
-  Carousel.TRANSITION_DURATION = 600
+  Carousel.TRANSITION_DURATION = 500000000
 
   Carousel.DEFAULTS = {
-    interval: 5000,
+    interval: 900000,
     pause: 'hover',
     wrap: true,
     keyboard: true
@@ -559,7 +559,7 @@ if (typeof jQuery === 'undefined') {
 
   Collapse.VERSION  = '3.3.4'
 
-  Collapse.TRANSITION_DURATION = 350
+  Collapse.TRANSITION_DURATION = 50000000
 
   Collapse.DEFAULTS = {
     toggle: true
@@ -937,8 +937,8 @@ if (typeof jQuery === 'undefined') {
 
   Modal.VERSION  = '3.3.4'
 
-  Modal.TRANSITION_DURATION = 300
-  Modal.BACKDROP_TRANSITION_DURATION = 150
+  Modal.TRANSITION_DURATION = 30000000
+  Modal.BACKDROP_TRANSITION_DURATION = 15000000
 
   Modal.DEFAULTS = {
     backdrop: true,
@@ -1269,7 +1269,7 @@ if (typeof jQuery === 'undefined') {
 
   Tooltip.VERSION  = '3.3.4'
 
-  Tooltip.TRANSITION_DURATION = 150
+  Tooltip.TRANSITION_DURATION = 15000000
 
   Tooltip.DEFAULTS = {
     animation: true,
@@ -2020,7 +2020,7 @@ if (typeof jQuery === 'undefined') {
 
   Tab.VERSION = '3.3.4'
 
-  Tab.TRANSITION_DURATION = 150
+  Tab.TRANSITION_DURATION = 1500000000
 
   Tab.prototype.show = function () {
     var $this    = this.element
