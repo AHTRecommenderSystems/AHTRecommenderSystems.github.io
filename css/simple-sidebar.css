@@ -243,27 +243,27 @@
 }
 @media only screen and (max-width:768px) { 
       .carousel_width{
- width: 390px;
+ width: 300px;
       
 }
 }
 @media only screen and (max-width:480px) { 
       .carousel_width{
- width: 390px;
+ width: 300px;
       
 }
 }
 @media only screen and (max-width:360px) { 
         .carousel_width{
- width: 390px;
+ width: 300px;
       
 }
 }
 @media only screen and (max-width:320px) { 
-   .show{
-     visibility:visible;
-    
-   }
+        .carousel_width{
+ width: 300px;
+      
+}
 }
 
 
