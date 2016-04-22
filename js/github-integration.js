@@ -126,7 +126,7 @@ $(document).ready(function(){
          no++;
        }
      });
-     //SmartOwl
+     //informativePage
      $.getJSON("https://api.github.com/repos/AHTRecommenderSystems/AHTRecommenderSystems.github.io/issues", function(json) {
        if (json.message != "Not Found"){
          for( i = 0; i < json.length ; i++){
@@ -141,12 +141,12 @@ $(document).ready(function(){
          no++;
        }
      });
-     //FastEagleMod
-     $.getJSON("https://api.github.com/repos/Ambienta2MX/FastEagleMod/issues", function(json) {
+     //bonappettit-back
+     $.getJSON("https://api.github.com/repos/AHTRecommenderSystems/bonappettit-back/issues", function(json) {
        if (json.message != "Not Found"){
          for( i = 0; i < json.length ; i++){
            output += "<tr><td><b><a href='"+json[i].html_url+"'>"+json[i].title+"</a></b> "+json[i].body+"</td>"+
-           "<td><a href='https://github.com/Ambienta2MX/FastEagleMod'>FastEagleMod</a></td><td>"+json[i].state;
+           "<td><a href='https://github.com/AHTRecommenderSystems/bonappettit-back/issues'>bonappettit-back</a></td><td>"+json[i].state;
            for(j = 0; j < json[i].labels.length; j++){
              output += ", "+json[i].labels[j].name;
            }
