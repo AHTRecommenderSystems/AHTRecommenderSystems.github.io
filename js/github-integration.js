@@ -109,14 +109,14 @@ $(document).ready(function(){
      $('#issues').html("<p  class='loading'>Cargando...</p>");
      var output = "";
      var no = 0;
-     //AHTRecommenderSystems/bonappettit-back
-     $.getJSON("https://api.github.com/repos/AHTRecommenderSystems/bonappettit-back/issues", function(json) {
+     //FastEagle
+     $.getJSON("https://api.github.com/repos/Ambienta2MX/FastEagle/issues", function(json) {
        if (json.message != "Not Found"){
         output += "<table class='table table-hover table-striped'>"+
          "<tr><th>Título</th><th>Módulo</th><th>Estado</th><th>Creado</th><th>Asignado</th></tr>";
          for( i = 0; i < json.length ; i++){
            output += "<tr><td><b><a href='"+json[i].html_url+"'>"+json[i].title+"</a></b> "+json[i].body+"</td>"+
-           "<td><a href='https://github.com/AHTRecommenderSystems/bonappettit-back'>bonappettit-back</a></td><td>"+json[i].state;
+           "<td><a href='https://github.com/Ambienta2MX/FastEagle'>FastEagle</a></td><td>"+json[i].state;
            for(j = 0; j < json[i].labels.length; j++){
              output += ", "+json[i].labels[j].name;
            }
@@ -126,12 +126,12 @@ $(document).ready(function(){
          no++;
        }
      });
-     //AHTRecommenderSystems/aht-neo4j-connect
-     $.getJSON("https://api.github.com/repos/AHTRecommenderSystems/aht-neo4j-connect/issues", function(json) {
+     //informativePage
+     $.getJSON("https://api.github.com/repos/AHTRecommenderSystems/AHTRecommenderSystems.github.io/issues", function(json) {
        if (json.message != "Not Found"){
          for( i = 0; i < json.length ; i++){
            output += "<tr><td><b><a href='"+json[i].html_url+"'>"+json[i].title+"</a></b> "+json[i].body+"</td>"+
-           "<td><a href='https://github.com/AHTRecommenderSystems/aht-neo4j-connect'>aht-neo4j-connect</a></td><td>"+json[i].state;
+           "<td><a href='https://github.com/AHTRecommenderSystems/AHTRecommenderSystems.github.io/issues'>Informative</a></td><td>"+json[i].state;
            for(j = 0; j < json[i].labels.length; j++){
              output += ", "+json[i].labels[j].name;
            }
@@ -141,12 +141,12 @@ $(document).ready(function(){
          no++;
        }
      });
-     //FastEagleMod
-     $.getJSON("https://api.github.com/repos/Ambienta2MX/FastEagleMod/issues", function(json) {
+     //bonappettit-back
+     $.getJSON("https://api.github.com/repos/AHTRecommenderSystems/bonappettit-back/issues", function(json) {
        if (json.message != "Not Found"){
          for( i = 0; i < json.length ; i++){
            output += "<tr><td><b><a href='"+json[i].html_url+"'>"+json[i].title+"</a></b> "+json[i].body+"</td>"+
-           "<td><a href='https://github.com/Ambienta2MX/FastEagleMod'>FastEagleMod</a></td><td>"+json[i].state;
+           "<td><a href='https://github.com/AHTRecommenderSystems/bonappettit-back/issues'>bonappettit-back</a></td><td>"+json[i].state;
            for(j = 0; j < json[i].labels.length; j++){
              output += ", "+json[i].labels[j].name;
            }
@@ -156,22 +156,7 @@ $(document).ready(function(){
          no++;
        }
      });
-     //FriendlyDolphin
-     $.getJSON("https://api.github.com/repos/AHTRecommenderSystems/aht-hibernate-connect/issues", function(json) {
-       if (json.message != "Not Found"){
-         for( i = 0; i < json.length ; i++){
-           output += "<tr><td><b><a href='"+json[i].html_url+"'>"+json[i].title+"</a></b> "+json[i].body+"</td>"+
-           "<td><a href='https://github.com/AHTRecommenderSystems/aht-hibernate-connect'>aht-hibernate-connect</a></td><td>"+json[i].state;
-           for(j = 0; j < json[i].labels.length; j++){
-             output += ", "+json[i].labels[j].name;
-           }
-           output +="</td><td>"+new Date(json[i].created_at).toLocaleString()+"</td><td><a href='"+json[i].assignee.html_url+"'>"+json[i].assignee.login+"</a></td></tr>";
-         }
-       } else {
-         no++;
-       }
-     });
-     //Ambienta2MX-Docs
+     //AHT-Docs
      $.getJSON("https://api.github.com/repos/AHTRecommenderSystems/AHT-Docs/issues", function(json) {
        if (json.message != "Not Found"){
          for( i = 0; i < json.length ; i++){
@@ -186,8 +171,69 @@ $(document).ready(function(){
          no++;
        }
      });
-     
-     
+     //AHT-API
+     $.getJSON("https://api.github.com/repos/AHTRecommenderSystems/AHT-API/issues", function(json) {
+       if (json.message != "Not Found"){
+         for( i = 0; i < json.length ; i++){
+           output += "<tr><td><b><a href='"+json[i].html_url+"'>"+json[i].title+"</a></b> "+json[i].body+"</td>"+
+           "<td><a href='https://github.com/AHTRecommenderSystems/AHT-API/issues'>AHT-API</a></td><td>"+json[i].state;
+           for(j = 0; j < json[i].labels.length; j++){
+             output += ", "+json[i].labels[j].name;
+           }
+           output +="</td><td>"+new Date(json[i].created_at).toLocaleString()+"</td><td><a href='"+json[i].assignee.html_url+"'>"+json[i].assignee.login+"</a></td></tr>";
+         }
+       } else {
+         no++;
+       }
+     });
+     //bonappettit-front
+     $.getJSON("https://api.github.com/repos/AHTRecommenderSystems/bonappettit-front/issues", function(json) {
+       if (json.message != "Not Found"){
+         for( i = 0; i < json.length ; i++){
+           output += "<tr><td><b><a href='"+json[i].html_url+"'>"+json[i].title+"</a></b> "+json[i].body+"</td>"+
+           "<td><a href='https://github.com/AHTRecommenderSystems/bonappettit-front'>bonappettit-front</a></td><td>"+json[i].state;
+           for(j = 0; j < json[i].labels.length; j++){
+             output += ", "+json[i].labels[j].name;
+           }
+           output +="</td><td>"+new Date(json[i].created_at).toLocaleString()+"</td><td><a href='"+json[i].assignee.html_url+"'>"+json[i].assignee.login+"</a></td></tr>";
+         }
+       } else {
+         no++;
+       }
+     });
+     //CuteBunny
+     $.getJSON("https://api.github.com/repos/Ambienta2MX/CuteBunny/issues", function(json) {
+       if (json.message != "Not Found"){
+         for( i = 0; i < json.length ; i++){
+           output += "<tr><td><b><a href='"+json[i].html_url+"'>"+json[i].title+"</a></b> "+json[i].body+"</td>"+
+           "<td><a href='https://github.com/Ambienta2MX/CuteBunny'>CuteBunny</a></td><td>"+json[i].state;
+           for(j = 0; j < json[i].labels.length; j++){
+             output += ", "+json[i].labels[j].name;
+           }
+           output +="</td><td>"+new Date(json[i].created_at).toLocaleString()+"</td><td><a href='"+json[i].assignee.html_url+"'>"+json[i].assignee.login+"</a></td></tr>";
+         }
+       } else {
+         no++;
+       }
+     });
+     //CleverBeaver
+     $.getJSON("https://api.github.com/repos/Ambienta2MX/CleverBeaver/issues", function(json) {
+       if (json.message != "Not Found"){
+         for( i = 0; i < json.length ; i++){
+           output += "<tr><td><b><a href='"+json[i].html_url+"'>"+json[i].title+"</a></b> "+json[i].body+"</td>"+
+           "<td><a href='https://github.com/Ambienta2MX/CleverBeaver'>CleverBeaver</a></td><td>"+json[i].state;
+           for(j = 0; j < json[i].labels.length; j++){
+             output += ", "+json[i].labels[j].name;
+           }
+           output +="</td><td>"+new Date(json[i].created_at).toLocaleString()+"</td><td><a href='"+json[i].assignee.html_url+"'>"+json[i].assignee.login+"</a></td></tr>";
+         }
+         output += "</table>";
+         $('#issues').html(output);
+       } else {
+         if(no==7)
+          $('#issues').html("<p>No se encontraron registros.</p>");
+       }
+     });
      return false;
    }
    getIssues();

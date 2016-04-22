@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bonappetit</title>
+    <title>API para el desarrollo de sistemas de recomendación</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
@@ -22,20 +24,20 @@
             <ul class="sidebar-nav">
                                 <li class="sidebar-brand">
                     <a href="index.html">
-                        Bonappetit
+                        AHTRecommenderSytems
                     </a>
                 </li>
                 <li>
                         <a href="introduction.html">Introducción</a>
                     </li>
                     <li>
-                        <a href="definition.html">Definición del proyecto</a>
+                        <a href="definition.html">Definición Del Proyecto</a>
                     </li>
                     <li>
-                        <a href="estado_del_arte.html">Estado del arte</a>
+                        <a href="estado_del_arte.html">Estado Del Arte</a>
                     </li>
                     <li>
-                        <a href="analisis_general.html">Análisis general del proyecto</a>
+                        <a href="analisis_general.html">Análisis General Del Proyecto</a>
                     </li>
                 <li>
                     <div class="accordion-group">
@@ -43,7 +45,7 @@
                             <a class="accordion-toogle"
                                data-toggle="collapse" data-parent="#leftMenu"
                                href="#collapseTwo">
-                                Marco teórico
+                                Marco Teórico
                             </a>
                         </div>
                         <div id="collapseTwo" class="accordion-body collapse"
@@ -51,7 +53,7 @@
                             <div class="accoridion-inner">
                                 <ul>
                                     <li><a href="definiciones.html" class="nav-item">Definiciones</a></li>
-                                    <li ><a href="tecnicas.html" class="nav-item">Técnicas de recomendación</a></li>
+                                    <li ><a href="tecnicas_recomendacion.html" class="nav-item">Técnicas De Recomendación</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -89,22 +91,22 @@
                     <a href="links.html">Enlaces</a>
                 </li>
 
-
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
+
         <!-- Page Content -->
         <div id="page-content-wrapper">
-            <div class="container-fluid">
+            <div class="container-fluid" >
                 <div class="row">
                     
                     <a id="nav-toggle" href="#menu-toogle" class="show"><span></span><h3></h3></a>
                     <br>
-                    <br>
-                    <div class="col-lg-12">
+                    
+                    <div class="col-lg-12" >
                             <!-- Carousel
                         ================================================== -->
-                        <div id="myCarousel" class="carousel slide carousel_width" data-ride="carousel">
+                        <div id="myCarousel" class="carousel slide carousel_width"  data-ride="carousel">
                           <!-- Indicators -->
                           <ol class="carousel-indicators">
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -113,7 +115,7 @@
                             <li data-target="#myCarousel" data-slide-to="3" class=""></li>
                             <li data-target="#myCarousel" data-slide-to="4" class=""></li>
                           </ol>
-                          <div class="carousel-inner" role="listbox">
+                          <div class="carousel-inner" role="listbox" >
                             <div class="item active">
                               <img class="first-slide" src="" alt="">
                               <div class="container">
@@ -202,29 +204,25 @@
         <!-- /#page-content-wrapper -->
 
     </div>
-
-
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="./js/holder.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./js/ie10-viewport-bug-workaround.js"></script>
-
     <!-- /#wrapper -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
-
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>
-   
-    </script>
+        
+$(document).ready(function(){
+     $("#myCarousel").carousel({
+         interval : 15000,
+         pause: false
+     });
+});
+</script>
+    
     <script>
         document.querySelector( "#nav-toggle" )
         .addEventListener( "click", function() {

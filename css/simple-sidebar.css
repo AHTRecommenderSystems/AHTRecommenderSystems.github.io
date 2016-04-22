@@ -27,10 +27,10 @@
     margin-left: -250px;
     overflow-y: auto;
     background: #000;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.500000000s ease;
+    -moz-transition: all 0.500000000s ease;
+    -o-transition: all 0.5000000000s ease;
+    transition: all 0.5000000000s ease;
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -174,7 +174,7 @@
 }
 
 
-h3 { color: white; }
+
 
 
 
@@ -243,25 +243,195 @@ h3 { color: white; }
 }
 @media only screen and (max-width:768px) { 
       .carousel_width{
- width: 390px;
+ width: 300px;
       
 }
 }
 @media only screen and (max-width:480px) { 
       .carousel_width{
- width: 390px;
+ width: 350px;
       
 }
 }
 @media only screen and (max-width:360px) { 
         .carousel_width{
- width: 390px;
+ width: 300px;
       
 }
 }
 @media only screen and (max-width:320px) { 
-   .show{
-     visibility:visible;
-    
-   }
+        .carousel_width{
+ width: 270px;
+      
+}
+}
+
+
+//spotify
+.spotify{
+    width: 300px;
+}
+@media only screen and (max-width:  1824px) { 
+.spotify{
+    width: 200px;
+    margin-top: 130px;
+}
+}
+@media only screen and (max-width: 1280px) { 
+ .spotify{
+    width: 200px;
+    margin-top: 130px;
+}
+}
+@media only screen and (max-width: 1224px) { 
+ .spotify{
+    width: 200px;
+    margin-top: 130px;
+}
+}
+@media only screen and (max-width: 1024px) { 
+ .spotify{
+    width: 200px;
+    margin-top: 130px;
+}
+}
+@media only screen and (max-width:768px) { 
+ .spotify{
+    width: 150px;
+    margin-bottom: 10px;
+}
+}
+@media only screen and (max-width:480px) { 
+ .spotify{
+    width: 150px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+}
+@media only screen and (max-width:360px) { 
+ .spotify{
+    width: 150px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+}
+@media only screen and (max-width:320px) { 
+    .spotify{
+    width: 150px;
+    margin-bottom: 10px;
+}
+}
+
+//spotify
+.spotify2{
+    width: 300px;
+}
+@media only screen and (max-width:  1824px) { 
+.spotify2{
+    width: 200px;
+    margin-top: 60px;
+}
+}
+@media only screen and (max-width: 1280px) { 
+ .spotify2{
+    width: 200px;
+    margin-top: 60px;
+}
+}
+@media only screen and (max-width: 1224px) { 
+ .spotify2{
+    width: 200px;
+    margin-top: 60px;
+}
+}
+@media only screen and (max-width: 1024px) { 
+ .spotify2{
+    width: 200px;
+    margin-top: 60px;
+}
+}
+@media only screen and (max-width:768px) { 
+ .spotify2{
+    width: 150px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+}
+@media only screen and (max-width:480px) { 
+ .spotify2{
+    width: 150px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+}
+@media only screen and (max-width:360px) { 
+ .spotify2{
+    width: 150px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+}
+@media only screen and (max-width:320px) { 
+    .spotify2{
+    width: 150px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+}
+
+//spotify
+.spotify3{
+    width: 300px;
+}
+@media only screen and (max-width:  1824px) { 
+.spotify3{
+    width: 200px;
+    margin-top: 150px;
+}
+}
+@media only screen and (max-width: 1280px) { 
+ .spotify3{
+    width: 200px;
+    margin-top: 150px;
+}
+}
+@media only screen and (max-width: 1224px) { 
+ .spotify3{
+    width: 200px;
+   margin-top: 150px;
+}
+}
+@media only screen and (max-width: 1024px) { 
+ .spotify3{
+    width: 200px;
+    margin-top: 150px;
+}
+}
+@media only screen and (max-width:768px) { 
+ .spotify3{
+    width: 150px;
+    margin-bottom: 90px;
+    margin-top: 50px;
+}
+}
+@media only screen and (max-width:480px) { 
+ .spotify3{
+    width: 150px;
+    margin-bottom: 90px;
+    margin-top: 50px;
+}
+}
+@media only screen and (max-width:360px) { 
+ .spotify3{
+    width: 150px;
+    margin-bottom: 90px;
+    margin-top:50px;
+}
+}
+@media only screen and (max-width:320px) { 
+    .spotify3{
+    width: 150px;
+    margin-bottom: 90px;
+    margin-top: 50px;
+}
 }
